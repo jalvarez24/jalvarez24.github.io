@@ -116,7 +116,7 @@ footer{
 .social a:hover{color:#3498db}
 
 .btn-rounded-white{
-    display:inline-block;color:#fff;padding:15px 25px;border:3px solid #fff;border-radius:30px;transition:.5s ease all
+    display:inline-block;color:#fff;padding:15px 25px;border:3px solid #fff;border-radius:30px;transition:.5s ease all;
 }
 
 .btn-rounded-white:hover{color:#3498db;background:#fff;text-decoration:none}
@@ -740,8 +740,22 @@ footer{
 	}
 }
 
-#lead-social a{
-        color:white;
-        padding: 10px;
-        padding-top: 10px;
+.lead-social{
+	display: inline-block;
+	padding: 15px 0px 0px 0px;
+}
+
+.lead-social a{
+		color:white;
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;
+}
+
+.lead-social a:hover{
+	color:#3498db;
+}
+
+.spacer{
+	width:0px;
 }
