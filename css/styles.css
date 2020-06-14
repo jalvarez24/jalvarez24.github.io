@@ -421,6 +421,11 @@ footer{
 {
 	float: left;
 }
+
+img{
+	width: 300px;
+	height: auto;
+}
 .project-info
 {
 	margin-left: 300px;
