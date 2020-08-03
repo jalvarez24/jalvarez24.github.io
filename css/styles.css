@@ -602,8 +602,26 @@ img{
 {
 	padding: 0 0 0 15px;
 }
+
+.projects-container{
+	background-color: #00000020;
+	width: 100%;
+	height: 100%;
+}
+
+.project-item{
+	background-color: #15151540;
+	width: 15vw;
+	height: 15vw;
+}
+
 @media only screen and (max-width: 750px)
 {
+	.project-item{
+		width: 90vw;
+		height: 90vw;
+	}
+
 	#experience-timeline:before,#experience-timeline:after
 	{
 		left: 23px;
@@ -764,3 +782,4 @@ img{
 .spacer{
 	width:0px;
 }
+
