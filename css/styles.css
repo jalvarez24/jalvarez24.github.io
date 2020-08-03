@@ -544,8 +544,8 @@ footer {
 }
 
 .project-image {
-	width: 300px;
-	height: 300px;
+	width: 325px;
+	height: 325px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -561,6 +561,10 @@ footer {
 .project-image img:hover {
 	transform: scale(1.65);
 	cursor: pointer;
+	position: relative;
+	z-index: 100;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+	background-color: #3498db;
 }
 
 .project-info {
