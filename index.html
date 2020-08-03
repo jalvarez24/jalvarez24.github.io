@@ -156,30 +156,29 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-
-                    <div class="project shadow-large">
-                            <div class="project-image">
-                                <img src="images/igotitfampic.png" />
-                            </div>
-                            <!-- End .project-image -->
-                            <div class="project-info">
-                                <h3><span style="font-weight: bold;">I GOT IT FAM!</span> Real-time Multiplayer Game</h3>
-                                <h4>React, Firebase Real-time DB, Firebase Functions, HTML, CSS, JavaScript</h4>
-                                <p>
-                                    • I GOT IT FAM is inspired by the classic board game Scattergories. The objective of the game is to get the most points by coming up with a word or term 
-                                    that fits the round's randomly generated category and letter combination.
-                                </p>
-                                <a href="https://github.com/jalvarez24/i-got-it-fam" target="_blank">View Project on GitHub</a>
-                                <br><br>
-                                <a href="https://igotitfam.com/" target="_blank">Go to Website</a>
-                            </div>
-                            <!-- End .project-info -->
-                        </div>
-                        <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="./new_images/igif.png" onclick="goToImage('igif');"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><span style="font-weight: bold;">I GOT IT FAM!</span> Real-time Multiplayer Game</h3>
+                        <h4>React, Firebase Real-time DB, Firebase Functions, HTML, CSS, JavaScript</h4>
+                        <p>
+                            • I GOT IT FAM is inspired by the classic board game Scattergories. The objective of the game is to get the most points by coming up with a word or term 
+                            that fits the round's randomly generated category and letter combination.
+                        </p>
+                        <a href="https://github.com/jalvarez24/i-got-it-fam" target="_blank">View Project on GitHub</a>
+                        <br><br>
+                        <a href="https://igotitfam.com/" target="_blank">Go to Website</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/bb.png" />
+                        <img src="./new_images/budgetBuddy.png" onclick="goToImage('budgetBuddy')"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -201,7 +200,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/332.png" />
+                        <img src="./new_images/student_professor.png" onclick="goToImage('student_professor')"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -219,7 +218,7 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/tidey.png" />
+                        <img src="./new_images/tidey.png" onclick="goToImage('tidey')"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -370,7 +369,12 @@
         </div>
     </footer>
     <!-- End footer -->
-
+    <script>
+        const goToImage = (picName) => {
+            let baseUrl = window.location.origin
+            window.open(baseUrl + '/new_images/' + picName + '.png')
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
