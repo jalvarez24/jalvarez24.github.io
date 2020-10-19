@@ -549,8 +549,15 @@ footer {
 	height: 325px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	
+	align-items: center;	
+}
+
+.project-image-iphone {
+	width: 325px;
+	height: 205px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 }
 
 .project-image img {
@@ -566,6 +573,17 @@ footer {
 	z-index: 100;
 	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 	background-color: #3498db;
+	padding:20px;
+}
+
+.project-image > .iphone:hover {
+	transform: scale(2.65);
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+	background-color: #3498db;
+	padding:10px;
 }
 
 .no-hover:hover {
@@ -892,7 +910,7 @@ footer {
 		float: none;
 	}
 
-	.project-image {
+	.project-image, .project-image-iphone {
 		display: none;
 	}
 

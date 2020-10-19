@@ -59,7 +59,6 @@
                     <i class="fa fa-github" style="font-size:42px" aria-hidden="true"></i>
                 </a>
             </div>
-
         </div>
         <!-- End #lead-content -->
 
@@ -157,9 +156,15 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="./new_images/igotitfam.png" onclick="goToImage('igotitfam');"/>
+                <div class="project shadow-large" style="display: flex;align-items: center;">
+                    <div style="display: flex; flex-direction: column; align-self: center;">
+                        <div class="project-image project-image-iphone" style="padding:0"> 
+                            <img src="./new_images/igotitfam.png" onclick="goToImage('igotitfam');" style="max-height: 100%; width: auto;"/>
+                        </div>
+                        <div class="project-image project-image-iphone" > 
+                            <img class='iphone' src="./new_images/iphone8.png" onclick="goToImage('iphone8');" style="max-height: 100%; width: auto;"/>
+                            <img class='iphone' src="./new_images/iphonex.png" onclick="goToImage('iphonex');" style="max-height: 100%; width: auto;"/>
+                        </div>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -172,6 +177,8 @@
                         <a href="https://github.com/jalvarez24/i-got-it-fam" target="_blank">View Project on GitHub</a>
                         <br><br>
                         <a href="https://igotitfam.com/" target="_blank">Go to Website</a>
+                        <br><br>
+                        <a href="https://apps.apple.com/us/app/i-got-it-fam/id1535888261" target="_blank">Go to iOS App</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -196,8 +203,8 @@
                 </div>
                 <!-- End .project -->
 
-                <div class="project shadow-large">
-                    <div class="project-image">
+                <div class="project shadow-large" style="display: flex;align-items: center;">
+                    <div class="project-image" style="height: 350px;">
                         <img src="./new_images/budgetBuddy.png" onclick="goToImage('budgetBuddy')"/>
                     </div>
                     <!-- End .project-image -->
