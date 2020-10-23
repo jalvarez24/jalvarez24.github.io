@@ -261,9 +261,18 @@ footer {
 	background: #f2f2f5;
 }
 
-#lead {
+/* #lead {
 	background: url(../images/lead-bg.jpg);
 	background-size: cover;
+	height: 100vh;
+	max-height: 1080px;
+	min-height: 300px;
+	overflow: hidden;
+	padding: 15px;
+	position: relative;
+} */
+
+#lead {
 	height: 100vh;
 	max-height: 1080px;
 	min-height: 300px;
@@ -273,6 +282,7 @@ footer {
 }
 
 #lead-content {
+	user-select: none;
 	left: 50%;
 	position: absolute;
 	text-align: center;
@@ -303,6 +313,8 @@ footer {
 }
 
 #lead-overlay {
+	/* background: #4ca1da; */
+	/* background: rgba(6, 43, 68); */
 	background: rgba(6, 43, 68, 0.85);
 	bottom: 0;
 	height: 100%;
@@ -311,8 +323,38 @@ footer {
 	right: 0;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 }
+
+#animated-bg {
+	background: url(../images/lead-bg.jpg);
+	background-size: cover;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.zoom {
+	animation: scale 40s linear infinite;
+}
+  
+  @keyframes scale {
+	50% {
+	  -webkit-transform: scale(1.2);
+	  -moz-transform: scale(1.2);
+	  -ms-transform: scale(1.2);
+	  -o-transform: scale(1.2);
+	  transform: scale(1.2);
+	}
+  }
 
 #lead-down {
 	bottom: 15px;
